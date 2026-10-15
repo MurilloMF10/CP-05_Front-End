@@ -1,0 +1,158 @@
+﻿:root {
+    --cafe: #9a6335;
+    --cafe-escuro: #754722;
+    --texto: #292d31;
+}
+
+
+body {
+    color: var(--texto);
+}
+.navbar {
+      min-height: 56px;
+}
+
+.marca-destaque {
+    color: #c48a51;
+}
+
+.nav-link {
+    font-size:  .9rem;
+}
+
+.btn-cafe {
+    color: #fff;
+    background: var(--cafe);
+    border-color: var(--cafe);
+}
+
+.btn-cafe:hover,
+.btn-cafe:focus {
+    color: #fff;
+    background: var(--cafe-escuro);
+    border-color: var(--cafe-escuro);
+}
+
+.hero {
+    background: #f6f7f8;
+}
+
+
+.hero h1 {
+    letter-spacing: -.03em;
+}
+
+.hero .lead {
+    max-width: 560px;
+    font-size: 1.05rem;
+    line-height: 1.55;
+      color: #535b63;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 300px;
+    border-radius: .375rem;
+  object-fit: cover;
+}
+
+.section-label {
+    color: var(--cafe);
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    max-width: 760px;
+    padding: 1.5rem 3rem 0;
+}
+
+.depoimentos .carousel-inner {
+    order: 1;
+    width: 100%;
+}
+
+.estrelas {
+    margin-bottom: .5rem;
+    color: #f4a900;
+    letter-spacing: .1rem;
+}
+
+.depoimento-texto {
+    margin: 0 auto 1rem;
+    max-width: 560px;
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
+.avatar-cliente {
+    display: inline-flex;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #a77b4d;
+    font-weight: 700;
+}
+
+.depoimentos figcaption small {
+    color: #6c757d;
+}
+
+.depoimentos .carousel-control-prev,
+.depoimentos .carousel-control-next {
+    width: 2rem;
+    filter: invert(1);
+}
+
+.depoimentos .carousel-indicators [data-bs-target] {
+    width: 7px;
+    height: 7px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--cafe);
+}
+
+.depoimentos .carousel-indicators {
+    order: 2;
+}
+
+.faq-section {
+    background: #f6f7f8;
+}
+
+.faq-section .accordion {
+    max-width: 720px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #214d84;
+    background: #d3e3fc;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: #b6d4fe;
+    box-shadow: 0 0 0 .2rem rgba(13, 110, 253, .12);
+}
+
+@media (min-width: 992px) {
+    .hero-image {
+    height: 305px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .depoimentos {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+}
+
+
